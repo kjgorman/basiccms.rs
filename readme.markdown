@@ -18,7 +18,7 @@ strong](https://github.com/ezyang/ocaml-cminsketch/blob/master/cminsketch.ml#L16
 the flipside, that means you can use it with anything that implements
 `Hash`, like this:
 
-```
+```rust
 extern crate basiccms;
 
 use basiccms::Sketch;
@@ -34,7 +34,7 @@ fn we_should_be_able_to_add_heterogenuously () {
 
     sketch.add(&"foo");
 
-     assert_eq!(2, sketch.point(&"foo"));
+    assert_eq!(2, sketch.point(&"foo"));
 }
 
 ```
