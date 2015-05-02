@@ -30,6 +30,9 @@ mod tests {
         sketch.add(&"foo"); sketch.add(&"bar"); sketch.add(&"quux");
 
         assert_eq!(1, sketch.point(&"foo"));
+        sketch.add(&"foo");
+
+        assert_eq!(2, sketch.point(&"foo"));
     }
 
     #[test]
