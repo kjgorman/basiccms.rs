@@ -11,3 +11,6 @@ keywords    = ["count min sketch", "cms"]
 [lib]
 name = "basiccms"
 path = "src/lib.rs"
+
+[dependencies]
+rand = "0.3.8"
