@@ -11,7 +11,11 @@ mod tests {
         let mut left  = Sketch::new(0.0001, 0.99);
         let mut right =  Sketch::new(0.0001, 0.99);
 
-        let third = &left + &right;
+        left.add(1); right.add(1);
+
+        let mut third = &left + &right;
+
+        third.point(1);
     }
 
     #[test]
