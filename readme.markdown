@@ -1,5 +1,7 @@
 ### basic count-min sketch
 
+![](https://travis-ci.org/kjgorman/basiccms.rs.svg?branch=master)
+
 It's the count-min sketch structure implemented in rust.
 
 You can use it to count frequencies of events with some degree of
