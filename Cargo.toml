@@ -6,11 +6,11 @@ description = "A basic count min sketch implementation"
 homepage    = "https://github.com/kjgorman/basiccms.rs"
 repository  = "https://github.com/kjgorman/basiccms.rs"
 license     = "MIT"
-keywords    = ["count min sketch", "cms"]
+keywords    = ["count", "min", "sketch", "countmin", "count-min"]
 
 [lib]
 name = "basiccms"
 path = "src/lib.rs"
 
 [dependencies]
-rand = "0.3.8"
+rand = "0.3.12"
