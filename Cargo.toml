@@ -1,6 +1,6 @@
 [package]
 name        = "basiccountminsketch"
-version     = "0.1.0"
+version     = "0.1.1"
 authors     = ["kjgorman <kieran@kjgorman.com>"]
 description = "A basic count min sketch implementation"
 homepage    = "https://github.com/kjgorman/basiccms.rs"
