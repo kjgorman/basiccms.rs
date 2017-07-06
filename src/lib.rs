@@ -3,7 +3,8 @@
 
 extern crate rand;
 
-use std::hash::{ SipHasher, Hasher, Hash };
+use std::collections::hash_map::DefaultHasher;
+use std::hash::{ Hasher, Hash };
 
 pub struct Sketch {
     width  : usize,
@@ -124,7 +125,7 @@ impl IntoSketch for u64 {
 
 impl IntoSketch for String {
     fn asu64(&self) -> u64 {
-        let mut hasher = SipHasher::new();
+        let mut hasher = DefaultHasher::new();
         self.hash(&mut hasher);
 
         hasher.finish()
@@ -133,7 +134,7 @@ impl IntoSketch for String {
 
 impl<'a> IntoSketch for &'a str {
     fn asu64(&self) -> u64 {
-        let mut hasher = SipHasher::new();
+        let mut hasher = DefaultHasher::new();
         self.hash(&mut hasher);
 
         hasher.finish()
